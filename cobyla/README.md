@@ -59,7 +59,7 @@ sol = minimize(objective, x0, method="COBYLA", bounds=bnds, constraints=cons)
 print(sol)
 ```
 
-In this example, the objective function is a parabola defined as x[0]**2 + x[1]**2, it's defined as a function of two variables x0 and x1. The constraints defined are constraint1(x) and constraint2(x). constraint1(x) is defined as x[0] + x[1] - 1 and constraint2(x) defined as 1 - x[0] - x[1]
+In this example, the objective function is a parabola defined as x[0]**2 + x[1]**2, it's defined as a function of two variables x0 and x1. The constraints defined are constraint1(x) and constraint2(x). constraint1(x) is defined as x[0] + x[1] - 1 and constraint2(x) defined as 1 - x[0] - x[1].
 
 The minimize function is then called with the initial guess for the variables x0, the bounds on the variables bnds, and the constraints cons. The method parameter is set to 'COBYLA' to indicate that the COBYLA algorithm should be used.
 
